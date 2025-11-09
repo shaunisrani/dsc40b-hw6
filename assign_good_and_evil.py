@@ -16,7 +16,7 @@ def assign_good_and_evil(graph):
     
     # We must loop through all nodes in the graph to handle
     # disconnected components (like 'UCSD' in the example).
-    for start_node in graph.nodes():
+    for start_node in graph.nodes:
         
         # If this node hasn't been labeled, it's part of a new component
         if start_node not in labels:
