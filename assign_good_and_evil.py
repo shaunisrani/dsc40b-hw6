@@ -57,7 +57,7 @@ def assign_good_and_evil(graph):
     status = {node: 'undiscovered' for node in graph.nodes}
     for node in graph.nodes:
         if status[node] == 'undiscovered':
-            ossible = good_and_evil_bfs(graph, node, status, label)
+            possible = good_and_evil_bfs(graph, node, status, label)
             if not possible:
                 return None
     return label
