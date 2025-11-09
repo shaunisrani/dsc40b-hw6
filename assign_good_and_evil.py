@@ -33,7 +33,7 @@ def assign_good_and_evil(graph):
                 # Determine the opposite label for neighbors
                 opposite_label = 'evil' if current_label == 'good' else 'good'
                 
-                for v in graph.get_neighbors(u):
+                for v in graph[u]:
                     if v not in labels:
                         # If neighbor is unvisited, label it and add to queue
                         labels[v] = opposite_label
